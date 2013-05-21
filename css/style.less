@@ -1,0 +1,940 @@
+/* _____  ____  _    ___          ________  _____ _______       _____  
+  / ____|/ __ \| |  | \ \        / /  ____|/ ____|__   __|/\   |  __ \ 
+ | |  __| |  | | |  | |\ \  /\  / /| |__  | (___    | |  /  \  | |  | |
+ | | |_ | |  | | |  | | \ \/  \/ / |  __|  \___ \   | | / /\ \ | |  | |
+ | |__| | |__| | |__| |  \  /\  /  | |____ ____) |  | |/ ____ \| |__| |
+  \_____|\____/ \____/    \/  \/   |______|_____/   |_/_/    \_\_____/ 
+                                                              
+      |\/|  _. ._ |   _ _|_ o ._   _    ()    |\/|  _   _| o  _. 
+      |  | (_| |  |< (/_ |_ | | | (_|   (_X   |  | (/_ (_| | (_| 
+                                   _|                            
+                          © www.gouwestadmm.nl
+*/
+
+@import "bootstrap.less";
+/* @import "bootstrap-responsive.less"; */
+@import "font-awesome.less";
+
+
+/* ---------------------------------------
+   Basis stijlen
+----------------------------------------*/
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.875em;
+	color: #557b84;
+	height: 100%;
+	}
+	
+.bottom{
+	margin-bottom: 40px;
+	}
+	
+p{
+	line-height: 1.875em;
+	}
+	
+a{
+	color: #7DA7D9;
+	}
+	
+/* ---------------------------------------
+   Indeling
+----------------------------------------*/
+	section{
+		padding: 3em 0;
+	}
+
+	.story-width{
+		max-width: 85%;
+		margin: 0 auto;
+	}
+
+
+/* ---------------------------------------
+   Typografie
+----------------------------------------*/	
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
+	color: #2E3846;
+	}
+	
+h1{
+	font-size: 3.5em; /* 56px */
+	  line-height: 1.0714em; /* 60px */
+	  margin-top: 0.5357em;
+	  margin-bottom: 0em;
+	}
+	
+#main h1 span{
+	background: #fff;
+	padding: 0 20px;
+	}
+	
+h2{
+	  font-size: 2.875em; /* 46px */
+  line-height: 1.3043em; /* 60px */
+  margin-top: 0.6522em;
+  margin-bottom: 0em;
+	}
+	
+h2 small{
+	font-size: 0.8em;
+	color: #757b84;
+	line-height: 26px;
+	font-weight: normal;
+	}
+	
+.page-header{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	}
+
+h3{
+	 font-size: 2.125em; /* 34px */
+  line-height: 1.7647em; /* 60px */
+  margin-top: 0.8824em;
+  margin-bottom: 0em;
+	}
+
+h3 span{
+	color: #9099A3;
+	font-weight: normal;
+	}
+	
+h4{
+	 font-size: 1.75em; /* 28px */
+  line-height: 1.0714em; /* 30px */
+  margin-top: 1.0714em;
+  margin-bottom: 0em;
+	}
+
+h5{
+	 font-size: 1.375em; /* 22px */
+  line-height: 1.3636em; /* 30px */
+  margin-top: 1.3636em;
+  margin-bottom: 0em;
+}
+
+h6{
+	font-size: 1.175em;
+  line-height: 1.3636em;
+  margin-top: 1.3636em;
+  margin-bottom: 0.6em;
+}
+
+.intro{
+	line-height: 1.45em;
+}
+	
+a{
+	text-decoration: none;
+	}
+	
+.right{
+	float: right;
+	}
+	
+/* ---------------------------------------
+   Navbar
+----------------------------------------*/	
+
+.navbar{
+	margin-bottom: 0;
+	background: none;
+	.navbar-inner{
+		background: none;
+		border: none;
+		box-shadow: none;
+
+		.brand{
+			max-width: 165px;
+			padding: 1.8em 20px;
+			}
+
+		.nav{
+			margin-top: 2.4em;
+			text-transform: uppercase;
+			font-size: 90%;
+			letter-spacing: 0.05em;
+		}
+	}
+}
+
+/* ---------------------------------------
+   Header
+----------------------------------------*/
+
+header{
+	background: url("http://assets.niiiws.com/images_landing/main_bg.jpg") no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
+	padding: 6em 0;
+	h1, h5{
+		color: #fff;
+		margin: 0;
+	}
+}
+
+//Bedrijvenpagina
+
+.bedrijfsintro{
+	h1{
+		margin-top: 0;
+	}
+}
+
+.portret{
+	position: relative;
+	z-index: -1;
+	&:after{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		box-shadow: inset 0 0 5px #222;
+	}
+}
+
+ul li{
+	margin: 0.5em 0;
+}
+
+.carousel{
+	margin-top: 6em;
+}
+.carousel-caption{
+	position: relative;
+}
+.graylighter{
+	background: #eee;
+}
+
+.featureheader{
+	background: #55606F;
+	padding: 3em;
+	}
+	
+.featureheader-webshop{
+	background: #55606f url("../img/webshop.jpg") no-repeat center center;
+	}
+	
+.featureheader h1{
+	color: #fff;
+	padding: 0;
+	font-weight: normal;
+	}
+	
+.featureheader h2{
+	font-size: 22px;
+	padding: 5px 0;
+	font-style: italic;
+	}
+
+
+footer{
+
+}
+
+
+/* ---------------------------------------
+   Buttons
+----------------------------------------*/	
+.btn{
+	background: #1765b6;
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: none;
+	color: #eee;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+	}
+	
+.btn:hover{
+	background: #688db9;
+	color: #fff;
+	}
+
+.btn-large{
+	font-size: 1.4em;
+	padding: 1em; 
+}
+	
+
+/* ---------------------------------------
+   Homepage styling
+----------------------------------------*/	
+#sharebiz{
+	padding: 5em 0;
+}
+	.sharebiz-intro{
+		font-size: 1.1em;
+	}
+
+.pand{
+	background: url("http://rdio-a.akamaihd.net/media/marketing/images/features/hero-sync-20121126.jpg") no-repeat center fixed;
+	background-size: cover;
+	padding: 4em 0;
+	color: #fff;
+	h1, h2{
+		color: #fff;
+		margin-bottom: 0.5em;
+		i{
+			margin-bottom: 0.2em;
+		}
+	}
+	p{
+		font-size: 1.1em;
+	}
+}
+
+.ondernemers{
+	overflow: hidden;
+	background: #f4f4f4;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	p{
+		max-width: 80%;
+		margin: 0 auto 3em;
+	}
+	img{
+		margin-bottom: -20em;
+		border-radius: 8px;
+	}
+}
+
+.hands-on{
+	background: url("http://static.dunkedcdn.com/assets/site/images/ipad-template-image.jpg") right bottom no-repeat;
+}
+
+.teams{
+	background: url("../img/faces.jpg") repeat-x center;
+	height: 300px;
+}
+
+.teamfotos img{
+	max-width: 90px;
+	margin-right: 1em;
+	:last-child{
+		margin-right: 0;
+	}
+}
+
+.resp{
+	max-width: 100%;
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	}
+	
+.resp:hover{
+	box-shadow:	0 0 0 1px #7da7d9,
+				0 0 0 3px #7da7d9,
+				0 -1px 0 2px #8DBAF0, 
+				0 0 0 4px #749bca;
+	border-radius: 0;
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	}
+	
+.vignette{
+	position: relative;
+	}
+	
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	background: rgba(125,167,217, 0.4);
+	color: #fff;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0 0 1px rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	}
+	
+.logobox .overlay{
+	padding-top: 15%;
+	}
+	
+	
+.overlay:hover{
+	opacity: 1;
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	}
+	
+.honderd{
+	height: 100%;
+	}
+	
+.table{
+	display: table !important;
+	height: 100%
+	}
+	
+.vertcenter{
+    display: table-cell;
+    vertical-align: middle;
+	}
+	
+.biz{
+	color: #7da7d9;
+	font-weight: bold;
+	}
+	
+.break{
+	background: url("../images/line.jpg") repeat-x center center;
+	text-indent: -9999px;
+	margin-bottom: 20px;
+	}
+	
+
+#header{
+	background: url("http://assets.niiiws.com/images_landing/main_bg.jpg") center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	padding: 10em 0;
+	overflow: hidden;
+	color: #fff;
+	h1, h2, h3, h4, h5, h6{
+		
+	}
+		h1{
+			font-size: 5.5em;
+			font-weight: 400;
+		}
+}
+	
+
+
+#main{
+	padding: 50px 0 50px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	}
+	
+.event{
+	padding-top: 25px;
+	}
+	
+.date {
+    color: #BF2800;
+    font-weight: normal;
+    padding-top: 5px;
+	margin-top: -20px;
+	padding-bottom: 20px;
+	}
+	
+.event h3 span{
+	font-size: 12px;
+	color: #fff;
+	background: #7da7d9;
+	text-shadow: none;
+	margin-left: 10px;
+}	
+
+	
+
+	
+/*Prijzenpagina*/
+
+#priceheader{
+	background: #55606F;
+	height: 500px;
+	width: 100%;
+	padding: 25px 0 65px;
+	}
+	
+#priceheader h1{
+	color: #fff;
+	padding: 20px 0 60px;
+	}
+	
+.plan{
+	background: #ECEEF1;
+	border-radius: 5px;
+	}
+	
+.plan .priceheader{
+	background: #fff;
+	border-radius: 5px 5px 0 0;
+	}
+	
+.plan h3{
+	line-height: 35px;
+	padding-top: 20px;
+	}
+	
+.plan h4{
+	color: #9099A3;
+    font: 20px/30px "Open sans", Sans-serif;
+    text-align: center;
+	font-weight: normal;
+	}
+
+.plan .content{
+	padding: 20px 15px;
+	}
+	
+
+.plan ul{
+	list-style: none;
+	}
+	
+.plan li, .plan p{
+	color: #55606E;
+	margin-bottom: 12px;
+	font-size: 15px;
+	}
+	
+.plan li b, .plan p b{
+	color: #27313D;
+	font-weight: bold;
+	}
+	
+.plan.other{
+	background: #3E4956;
+	color: #CBD0D5;
+	}
+	
+.plan.other .priceheader{
+	background: none;
+	}
+
+.priceheader{
+		h3{
+			margin-top: 0;
+			line-height: 1.2em;
+		}
+		h6{
+			margin-top: 0;
+		}
+}
+	
+.plan.other h3{
+	color: #fff;
+	}
+	
+.plan.other .content{
+	border-top: 1px solid #55606F;
+	margin: 0 15px;
+	}
+	
+.plan.other li, .plan.other p, .plan.other li b, .plan.other p b{
+	color: #CBD0D5;
+}	
+	
+.aanbevolen{
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	-webkit-border-radius: 5px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+    background: #fff url("../images/background.jpg");
+    padding: 20px;
+	text-shadow: 1px 1px #fff;
+	}
+	
+.aanbevolen .prijs{
+	border-top: none;
+	}
+	
+.aanbevolen h2{
+	padding-top: 0;
+	}
+	
+.button{
+	margin: 20px 0 0;
+	width: 200px;
+	height: 39px;
+	-moz-box-shadow: 0 1px 0 #A9422E, 0 -1px 0 #A9422E;
+	-webkit-box-shadow: 0 1px 0 #A9422E, 0 -1px 0 #A9422E;
+	box-shadow: 0 1px 0 #A9422E, 0 -1px 0 #A9422E;
+    background-color: #bf2800;
+    border-bottom: 1px solid #EE836F;
+    border-top: 1px solid #EE836F;
+	}
+	
+	
+.button2{
+	margin: 20px 0 0;
+	width: 160px;
+	height: 39px;
+	-moz-box-shadow: 0 1px 0 #A9422E, 0 -1px 0 #A9422E;
+	-webkit-box-shadow: 0 1px 0 #A9422E, 0 -1px 0 #A9422E;
+	box-shadow: 0 1px 0 #A9422E, 0 -1px 0 #A9422E;
+    background-color: #bf2800;
+    border-bottom: 1px solid #EE836F;
+    border-top: 1px solid #EE836F;
+	}
+	
+	
+.button .overlay{
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	border-radius: 7px 7px 7px 7px;
+    background-image: url("../images/btn_overlay.png");
+    background-position: 0 50%;
+    background-repeat: repeat-x;
+    color: white !important;
+    display: block;
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+	font-size: 18px;
+	}
+	
+.button a{
+	padding-top: 7px;
+	color: #fff;
+	display: block;
+	}
+	
+.button2 a{
+	padding-top: 7px;
+	color: #fff;
+	display: block;
+	}
+	
+.small b{
+	color: #bf2800;
+	}
+	
+.otherPlans{
+	font-size: 16px;
+	line-height: 30px;
+	text-shadow: 1px 1px #384C64;
+	}
+	
+.otherPlans h3{
+	color: #fff;
+	}
+	
+.col2{
+	-moz-column-count: 2;
+	}
+	
+.regular h1{
+	background: none !important;
+	text-align: left;
+	padding: 20px 0;
+	}
+	
+/*Eigenschappen pagina*/
+
+	
+.intro{
+	font-weight: 100;
+	color: #5c6168;
+	}
+	
+.intro2{
+	text-align: left;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 20px 0 0;
+	}
+	
+.upper{
+	background: #bf2800;
+	padding: 5px 5px 4px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: none;
+	}
+	
+.features li{
+	margin-bottom: 30px;
+	}
+	
+.features img{
+    background-color: #FFFFFF;
+	}
+	
+.features img:hover{
+		border: 1px solid #749bca;
+	box-shadow:	0 0 0 3px #7da7d9,
+				0 -1px 0 2px #8DBAF0, 
+				0 0 0 4px #749bca;
+	border-radius: 0;
+	}
+	
+.features p{
+	text-align: center;
+	padding: 20px 0 0;
+	}
+
+.center{
+	text-align: center;
+	}
+	
+.light{
+	font-weight: normal;
+	}
+	
+.padding{
+	padding-bottom: 20px;
+	}
+	
+.quote{
+	font-family: Georgia, serif;
+	font-style: italic;
+	padding: 20px 0 80px;
+	font-size: 26px;
+	}
+	
+.mainalt{
+	background: #f3f3f3 url("../images/mainaltbg.png") repeat;
+	padding: 20px 0;
+	border-top: 1px solid #e2e2e2;
+	}
+	
+.mainalt h1{
+	background: url("../images/line.jpg") repeat-x center center;
+	}
+	
+.mainalt h1 span{
+	background: #f3f3f3 url("../images/mainaltbg.jpg");
+	padding: 0 20px;
+	color: #9b9b9b;
+	text-shadow: 1px 1px #fff;
+	}
+	
+.mainalt .intro{
+	color: #555;
+	text-shadow: 1px 1px #fff;
+	}
+	
+.mainalt h4{
+	color: #bf2800;
+	text-shadow: 1px 1px #fff;
+	}
+	
+.sidetext{
+	padding: 20px 0 40px;
+	font-size: 16px;
+	line-height: 32px;
+	}
+	
+.margin{
+	margin-bottom: 50px;
+	}
+	
+.logobox{
+    -moz-border-radius: 4px 4px 4px 4px;
+    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 4px 4px 4px 4px;
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+	height: 100px;
+	width: 100%;
+	table-layout: fixed;
+	position: relative;
+	text-align: center;
+		&:before{
+			content: '';
+			  display: inline-block;
+			  height: 100%;
+			  vertical-align: middle;
+			  margin-right: -0.25em; /* Adjusts for spacing */
+		}
+		.logo-padding{
+			display: inline-block;
+			vertical-align: middle;
+			max-width: 65%;
+			max-height: 80%;
+		}
+	}
+	
+.logobox:hover{
+	border: 1px solid #749bca;
+	box-shadow:	0 0 0 3px #7da7d9,
+				0 -1px 0 2px #8DBAF0, 
+				0 0 0 4px #749bca;
+	border-radius: 0;
+	}
+
+
+		
+.companyintro{
+	color: #666666;
+    font-size: 15px;
+	font-style: italic;
+	line-height: 1.4em;
+	margin: 15px 0 40px;
+	text-align: center;
+	text-shadow: 1px 1px #fff;
+	}
+	
+/*over*/
+
+.contactform{
+	width: 420px;
+	margin-top: 15px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-bottom: 50px;
+	}
+	
+.textbox{
+	width: 100%;
+	height: 25px;
+	padding: 2px;
+	border: none;
+	color: #666;
+	border: 1px solid #ccc;
+	}
+	
+.textarea{
+	width: 100%;
+	border: none;
+	padding: 2px;
+	color: #666;
+	border: 1px solid #ccc;
+	}
+
+iframe{
+	margin-top: 50px;
+	}
+	
+#map_canvas{
+	 width:100%;
+	 height:640px;
+	 margin-top: 60px;
+	 }
+	
+.blue{
+	background:	#7DA7D9;
+	margin-bottom: 40px;
+	color: #fff;
+	}
+	
+.blue h1, .blue h3{
+	color: #fff;
+	}
+	
+.list li{
+	line-height: 2em;
+	margin-left: 20px;
+	}
+	
+.bigger{
+	font-size: 1.2em;
+	}
+
+.mask{
+    position:relative;
+    height:220px;
+    float:left;
+    overflow:hidden;
+    border:5px solid #f6f6f6;
+    box-shadow:0 0 1px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 0 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow:0 0 1px rgba(0,0,0,0.2);
+}
+
+.mask img {
+	max-width: 130%;
+    position:absolute;
+    margin-top:-160px; /* half the height */
+    margin-left:-210px; /* half the width */
+    top:50%;
+    left:50%;
+}
+
+.mask img {
+    -webkit-transform: rotate(-15deg);
+    -moz-transform:rotate(-15deg);
+    -o-transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg);
+    transform:rotate(-15deg);
+}
+	
+.thumbnail{
+
+	}
+	 
+/* 
+
+*/
+.tweet_rotator { overflow: hidden;  position: relative; }
+.tweet_holder { position: relative; }
+.tweetparent { overflow: hidden;  }
+.tweetbox { 
+	display: block; 
+	padding: 20px 0 50px;
+	text-align: left;
+	}
+	
+.tweet_rotator ul.nav {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 5px;
+	}
+	
+.tweet_rotator ul.nav li { cursor: pointer; width: 20px; height: 20px; background-image: url(../images/sprite.png); background-repeat: no-repeat; display: block; }
+.tweet_rotator ul.nav li.active { background-position: 0px -20px; }
+
+/* Tweet rotator colors */
+.color_1 	{ background-color: none; } /* Base color, and so on */
+.color_2 	{  }
+.color_3 	{  }
+.color_4 	{  }
+.color_5 	{  }
+.color_6 	{  }
+/*
+	End of app styles
+*/
+
+/* 
+	General app styling 
+*/
+#twitter{
+	height: 210px;
+	margin: auto; 
+	font-family: 'Open Sans', sans-serif;
+	}
+	
+.tweetbox span {
+	color: #fff;
+	text-transform: uppercase;
+
+	}
+.tweetbox span a {
+	color: #fff;
+	text-decoration: none;
+	}
+	
+.tweetbox p { 
+	padding-top: 20px;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.010em;
+	line-height: 36px;
+	padding-bottom: 10px;
+	word-spacing: 0.04em;
+	}
+.tweetbox p a { color: #222; }
+.tweetbox em { font-size: 12px; color: #fff; text-transform: uppercase;  }
+    
+
